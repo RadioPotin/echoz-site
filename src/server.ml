@@ -21,7 +21,7 @@ let title content =
     let soup = content |> parse in
     soup $ "h1" |> R.leaf_text
   with
-  | Failure _e -> "Harnessing Cutting-Edge Technologies"
+  | Failure _e -> "Zamal Vie"
 
 let () =
   Dream.run ~interface:"0.0.0.0"

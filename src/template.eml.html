@@ -9,10 +9,11 @@ let render_unsafe ~title ~content ?(authors = "Zamal Team") ?(keywords = Meta.de
       <meta name="keywords" content="<%s! keywords %>" />
       <link rel="icon" type="image/svg+xml" href="/assets/img/logo_echoz_green.png">
       <link href="/assets/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="/assets/css/style.css" rel="stylesheet"/>
     </head>
     <body>
       <header>
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
               <div class="container-fluid">
                 <a class="navbar-brand" href="/"><img src="/assets/img/logo_echoz_black.png" alt="Echo'Z" height="60" /></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +25,7 @@ let render_unsafe ~title ~content ?(authors = "Zamal Team") ?(keywords = Meta.de
                             <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Évènements
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
                               <li><a class="dropdown-item" href="/burningzamal">Le Burning Zamal</a></li>
                               <li><a class="dropdown-item" href="#">Plein d'autres trucs</a></li>
                             </ul>
@@ -33,7 +34,7 @@ let render_unsafe ~title ~content ?(authors = "Zamal Team") ?(keywords = Meta.de
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               À propos
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarDarkDropdownMenuLink">
                               <li><a class="dropdown-item" href="/zamalteam">La Zamal Team</a></li>
                               <li><a class="dropdown-item" href="#">Le but de tout ça</a></li>
                               <li><hr class="dropdown-divider"></li>
@@ -62,8 +63,6 @@ let render_unsafe ~title ~content ?(authors = "Zamal Team") ?(keywords = Meta.de
             <a href="#">Twitter</a> &middot;
             <a href="#">Email</a> &middot;
             <a href="tel:#">Phone</a> &middot;
-            <a href=""></a> &middot;
-            <a href="/legal-notice">Legal Notice</a> &middot;
           </p>
         </footer>
       </main>
