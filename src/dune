@@ -1,0 +1,19 @@
+(executable
+ (public_name server)
+ (modules content server template meta error)
+ (libraries dream omd ubase markup lambdasoup ez_file ez_subst))
+
+(rule
+ (targets template.ml)
+ (deps template.eml.html)
+ (action
+  (run dream_eml %{deps} --workspace %{workspace_root})))
+
+(rule
+ (target content.ml)
+ (deps
+  (source_tree content))
+ (action
+  (with-stdout-to
+   %{null}
+   (run ocaml-crunch -m plain content -o %{target}))))
