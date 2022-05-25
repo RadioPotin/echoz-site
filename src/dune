@@ -1,6 +1,6 @@
 (executable
  (public_name server)
- (modules content server template meta error)
+ (modules content server template meta error blog)
  (libraries dream omd ubase markup lambdasoup ez_file ez_subst))
 
 (rule
