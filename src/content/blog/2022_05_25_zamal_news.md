@@ -6,7 +6,7 @@ tags=Festival,Burning,Zamal
 <div class="row">
   <div class="col-lg-3"></div>
     <div class="col-lg-6">
-      <img src="/assets/img/photo_zamal_couche_de_soleil.jpg">
+      <img src="/assets/img/photo_zamal_couche_de_soleil_SD.jpg">
     </div>
   <div class="col-lg-3"></div>
 </div>

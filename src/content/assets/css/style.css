@@ -1,4 +1,10 @@
 
+h1 {
+  text-align:center;
+  margin-top:2em;
+  margin-bottom:1.5em;
+}
+
 body {
   background-color:#E9E9E9;
 }
@@ -47,8 +53,9 @@ nav.navbar.navbar-expand-md.navbar-light.fixed-top.bg-light {
  */
 
 hr.featurette-divider {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 h1#page-title-burning {
-  text-align:center;
 }
